@@ -1292,12 +1292,15 @@ input[id="services-toggle-input-3"]:checked ~ .services__toggle label:nth-child(
   transition: 0.5s ease; }
 
 .form__item textarea {
-  height: 156px;
+  height: 106px;
   margin-bottom: 35px;
   resize: none; }
 
 .form__btn {
   width: 200px; }
+
+.message__wrapper {
+  position: relative; }
 
 .message {
   width: 75%;
@@ -1319,7 +1322,7 @@ input[id="services-toggle-input-3"]:checked ~ .services__toggle label:nth-child(
 
 .message--pop {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 101;
@@ -1839,6 +1842,7 @@ input[id="services-toggle-input-3"]:checked ~ .services__toggle label:nth-child(
   cursor: pointer; }
 
 .catalog__item-title {
+  margin-left: 5px;
   font-family: 'Gilroy', sans-serif;
   font-size: 14px;
   color: #000;
@@ -1847,6 +1851,7 @@ input[id="services-toggle-input-3"]:checked ~ .services__toggle label:nth-child(
   letter-spacing: normal; }
 
 .catalog__item-price {
+  padding: 0 5px;
   white-space: nowrap;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -2195,6 +2200,9 @@ input[id="services-toggle-input-3"]:checked ~ .services__toggle label:nth-child(
   .message {
     width: 65%;
     padding: 95px 80px 85px; }
+    .message--pop {
+      bottom: auto;
+      top: 50%; }
   .message__btn-switch {
     top: 30px;
     right: 30px; }
