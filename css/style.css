@@ -39,13 +39,13 @@ address {
   font-size: 30px;
   color: #000;
   font-weight: normal;
-  line-height: 36px;
+  line-height: 33px;
   letter-spacing: normal;
-  margin-bottom: 8px; }
+  margin-bottom: 15px; }
 
 .header__subtitle {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   padding-left: 5px;
   font-size: 16px;
   color: #000;
@@ -54,12 +54,52 @@ address {
   letter-spacing: normal; }
 
 .header__email {
+  display: block;
   font-size: 13px;
   color: #000;
   font-weight: normal;
   line-height: 13px;
   letter-spacing: normal;
-  padding-left: 5px; }
+  padding-left: 5px;
+  padding-bottom: 10px; }
+
+.description {
+  width: 85%;
+  max-width: 1632px;
+  margin: 0 auto;
+  margin-bottom: 7%; }
+
+.description__block {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-bottom: 25px;
+  margin-right: 20px; }
+  .description__block:last-child {
+    margin-right: 0; }
+
+.description__block-title {
+  margin-bottom: 10px;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: normal;
+  line-height: 25px;
+  letter-spacing: normal; }
+
+.description__block-list {
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 20px;
+  font-size: 14px;
+  color: inherit;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  list-style: circle; }
+
+.description__block-item {
+  margin-bottom: 3px; }
 
 .grid__wrapper {
   width: 85%;
@@ -120,13 +160,12 @@ address {
   flex-wrap: wrap; }
 
 .work__cover-title {
-  font-family: 'PT Serif', serif;
-  font-size: 18px;
+  font-size: 16px;
   color: inherit;
   font-weight: normal;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: normal;
-  margin-bottom: 10px; }
+  margin-bottom: 2.5%; }
 
 .work__cover-content {
   margin-bottom: 25px;
@@ -219,21 +258,33 @@ address {
     -webkit-box-direction: normal;
             flex-direction: column;
     box-sizing: border-box;
-    margin-bottom: 4%;
-    margin-top: 5%; }
+    margin-bottom: 3%;
+    margin-top: 4%; }
+  .description {
+    margin-bottom: 4%; }
+  .description__block {
+    width: 400px;
+    margin-bottom: 0;
+    margin-right: 50px; }
   .grid__col--tb-50 {
     width: 50%; }
   .work {
-    margin-bottom: 4%; }
+    margin-bottom: 10%; }
   .work__title {
     -webkit-box-ordinal-group: 3;
             order: 2;
     margin-bottom: 10px;
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: normal;
+    line-height: 22px;
+    letter-spacing: normal;
     cursor: default; }
   .work__tags {
     -webkit-box-ordinal-group: 4;
             order: 3;
-    margin: 0; }
+    margin-bottom: 0; }
   .work__content {
     position: relative;
     margin-bottom: 20px; }
@@ -248,7 +299,8 @@ address {
     padding: 5% 8%;
     opacity: 0;
     overflow: hidden;
-    transition: opacity 0.3s ease-in; }
+    transition: opacity 0.3s ease-in;
+    cursor: default; }
     .work__cover--pilates {
       background-color: rgba(199, 173, 233, 0.85);
       color: #000; }
@@ -264,8 +316,6 @@ address {
     opacity: 1; }
   .work__cover-content {
     margin-bottom: 4%; }
-  .work__cover-title {
-    margin-bottom: 2.5%; }
   .work__features {
     height: 108px;
     overflow: hidden; }
@@ -300,15 +350,22 @@ address {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column; }
-  .work__cover {
-    padding: 7% 8%; }
-  .work__cover-title {
+  .work__title {
     font-family: 'PT Serif', serif;
     font-size: 20px;
+    color: #000;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: normal; }
+  .work__cover {
+    padding: 8% 8%; }
+  .work__cover-title {
+    font-size: 18px;
     color: inherit;
     font-weight: normal;
     line-height: 1;
-    letter-spacing: normal; }
+    letter-spacing: normal;
+    margin-bottom: 3%; }
   .work__features {
     height: 120px;
     font-size: 14px;
@@ -316,14 +373,12 @@ address {
     font-weight: normal;
     line-height: 20px;
     letter-spacing: normal; }
-  .work__cover-title {
-    margin-bottom: 4%; }
   .work__cover-content {
     margin-bottom: 5%; }
   .work__btns {
     align-self: center;
     width: 140px; }
   .work__btn {
-    margin-bottom: 15px;
     width: 140px;
+    margin-bottom: 15px;
     letter-spacing: 1px; } }
