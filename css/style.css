@@ -63,6 +63,17 @@ address {
   padding-left: 5px;
   padding-bottom: 10px; }
 
+@media (min-width: 1100px) {
+  .header {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+    margin-top: 4%; } }
+
 .description {
   width: 85%;
   max-width: 1632px;
@@ -101,6 +112,14 @@ address {
 .description__block-item {
   margin-bottom: 3px; }
 
+@media (min-width: 1100px) {
+  .description {
+    margin-bottom: 4%; }
+  .description__block {
+    width: 400px;
+    margin-bottom: 0;
+    margin-right: 50px; } }
+
 .grid__wrapper {
   width: 85%;
   max-width: 1632px;
@@ -118,6 +137,20 @@ address {
   box-sizing: border-box;
   width: 100%;
   padding: 0 2%; }
+
+@media (min-width: 1100px) {
+  .grid__col--tb-50 {
+    width: 50%; } }
+
+@media (min-width: 1350px) {
+  .grid__col--ds-25 {
+    width: 25%; }
+  .grid__col--ds-50 {
+    width: 50%; }
+  .grid__col--ds-75 {
+    width: 75%; }
+  .grid__col--ds-100 {
+    width: 100%; } }
 
 .work {
   margin-bottom: 10%; }
@@ -250,24 +283,8 @@ address {
     border-color: #ffd200; }
   .work__btn--pilates::after {
     border-color: #c7ade9; }
-  @media (min-width: 1100px) {
-  .header {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    box-sizing: border-box;
-    margin-bottom: 3%;
-    margin-top: 4%; }
-  .description {
-    margin-bottom: 4%; }
-  .description__block {
-    width: 400px;
-    margin-bottom: 0;
-    margin-right: 50px; }
-  .grid__col--tb-50 {
-    width: 50%; }
+
+@media (min-width: 1100px) {
   .work {
     margin-bottom: 10%; }
   .work__title {
@@ -335,15 +352,8 @@ address {
       border-color: #fff; }
     .work__btn--pilates::after {
       border-color: #ecddfc; } }
-  @media (min-width: 1350px) {
-  .grid__col--ds-25 {
-    width: 25%; }
-  .grid__col--ds-50 {
-    width: 50%; }
-  .grid__col--ds-75 {
-    width: 75%; }
-  .grid__col--ds-100 {
-    width: 100%; }
+
+@media (min-width: 1350px) {
   .work {
     display: -webkit-box;
     display: flex;
