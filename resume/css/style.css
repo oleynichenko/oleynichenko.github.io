@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: "PT Sans Narrow";
-  src: url(../../fonts/ptsansnarrow.woff2), url(../../fonts/ptsansnarrow.woff);
+  src: url(../fonts/ptsansnarrow.woff2), url(../fonts/ptsansnarrow.woff);
   font-weight: normal; }
 
 @font-face {
   font-family: "PT Sans Narrow";
-  src: url(../../fonts/ptsansnarrowbold.woff2), url(../../fonts/ptsansnarrowbold.woff);
+  src: url(../fonts/ptsansnarrowbold.woff2), url(../fonts/ptsansnarrowbold.woff);
   font-weight: bold; }
 
 body {
@@ -137,6 +137,7 @@ a {
           flex-direction: column; }
 
 .info__name {
+  display: block;
   font-size: 20px;
   color: #7a7a7a;
   font-weight: normal;
@@ -146,6 +147,7 @@ a {
           order: 2; }
 
 .info__info {
+  display: block;
   text-transform: uppercase;
   font-size: 20px;
   color: #4c4c4c;
@@ -195,6 +197,7 @@ a {
     border-radius: 50%; }
 
 .contacts__name {
+  display: block;
   font-size: 20px;
   color: #7a7a7a;
   font-weight: normal;
@@ -204,6 +207,7 @@ a {
           order: 2; }
 
 .contacts__info {
+  display: block;
   font-size: 24px;
   color: #7a7a7a;
   font-weight: normal;
@@ -249,7 +253,8 @@ a {
   color: #7a7a7a;
   font-weight: normal;
   line-height: 24px;
-  letter-spacing: normal; }
+  letter-spacing: normal;
+  overflow: hidden; }
 
 .business__key {
   display: block;
