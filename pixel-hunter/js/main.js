@@ -346,13 +346,13 @@ class RulesView extends AbstractView {
       rulesBtn.disabled = rulesInput.value.length === 0;
     });
 
-    rulesBtn.addEventListener(`click`, () => {
+    rulesBtn.addEventListener(`click`, (event) => {
       event.preventDefault();
       this.onNext(rulesInput.value);
     });
 
     const headerBack = this.element.querySelector(`.header__back`);
-    headerBack.addEventListener(`click`, (evt) => {
+    headerBack.addEventListener(`click`, (event) => {
       event.preventDefault();
       this.onHeaderBack();
     });
@@ -460,6 +460,7 @@ class LevelView extends AbstractView {
   }
 
   bind() {
+
     // установка таймера времени
     const gameTimer = this.element.querySelector(`.game__timer`);
 
@@ -476,7 +477,7 @@ class LevelView extends AbstractView {
     const gameOptions = this.element.querySelectorAll(`.game__option`);
 
     Array.from(gameOptions).forEach((option, optionIndex) => {
-      option.addEventListener(`click`, (evt) => {
+      option.addEventListener(`click`, (event) => {
         if (this.hasQuestion && this._isAnswered(gameContent)) {
           clearInterval(timer);
           this.onNext(this._isQuestionsAnswerRight(gameContent), this.time);
@@ -491,8 +492,8 @@ class LevelView extends AbstractView {
     // обработка возврата на начальный экрн
     const headerBack = this.element.querySelector(`.header__back`);
 
-    headerBack.addEventListener(`click`, (evt) => {
-      event.preventDefault();
+    headerBack.addEventListener(`click`, (event) => {
+      event.preventDefault(event);
       this.onHeaderBack();
     });
 
@@ -635,8 +636,8 @@ class StatsView extends AbstractView {
 
   bind() {
     const headerBack = this.element.querySelector(`.header__back`);
-    headerBack.addEventListener(`click`, (evt) => {
-      event.preventDefault();
+    headerBack.addEventListener(`click`, (event) => {
+      event.preventDefault(event);
       this.onHeaderBack();
     });
   }
@@ -692,7 +693,6 @@ class App {
 
   _changeController(route) {
     const controller = this.routes[route];
-
     if (!controller) {
       this.showGreeting();
     } else {
@@ -725,7 +725,9 @@ class App {
   }
 
   reload() {
-    location.href = location.origin;
+    location.hash = ControllerID.GREETING;
+    // location.href = location.origin;
+    location.reload();
   }
 }
 
