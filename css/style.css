@@ -267,16 +267,20 @@ address {
   .work__btn:hover::after {
     height: 300%;
     opacity: 1; }
+  .work__btn:hover {
+    transition: border-color 0.7s; }
   .work__btn--brb::after {
-    border-color: rgba(0, 0, 0, 0.7); }
+    border-color: #000; }
   .work__btn--device::after {
-    border-color: #ffd200; }
+    border-color: #ffe27f; }
   .work__btn--pilates::after {
     border-color: #c7ade9; }
   .work__btn--pixel::after {
     border-color: #b3cfd0; }
   .work__btn--tests::after {
     border-color: #d80033; }
+  .work__btn--azbyka::after {
+    border-color: #6E4B0B; }
 
 @media (min-width: 1100px) {
   .work {
@@ -312,19 +316,22 @@ address {
     cursor: default; }
     .work__cover--pilates {
       background-color: rgba(199, 173, 233, 0.85);
-      color: #000; }
+      color: #40374B; }
     .work__cover--brb {
       background-color: rgba(0, 0, 0, 0.85);
-      color: #fff; }
+      color: #F2F2F2; }
     .work__cover--device {
       background-color: rgba(255, 226, 127, 0.95);
-      color: #000; }
+      color: #665A32; }
     .work__cover--pixel {
       background-color: rgba(179, 207, 208, 0.95);
-      color: #000; }
+      color: #475252; }
     .work__cover--tests {
       background-color: rgba(216, 0, 51, 0.95);
-      color: #000; }
+      color: #621527; }
+    .work__cover--azbyka {
+      background-color: rgba(110, 75, 11, 0.95);
+      color: #FFF6E5; }
   .work__content:hover .work__cover {
     opacity: 1; }
   .work__title:hover ~ .work__content .work__cover {
@@ -338,22 +345,45 @@ address {
     align-self: flex-start; }
   .work__btn {
     margin: 0; }
+    .work__btn:active {
+      color: inherit;
+      opacity: 0.7; }
     .work__btn--brb {
-      border-color: rgba(255, 255, 255, 0.85); }
+      border-color: rgba(242, 242, 242, 0.85); }
       .work__btn--brb:hover {
-        border-color: #fff; }
-      .work__btn--brb:active {
-        color: rgba(255, 255, 255, 0.7); }
+        border-color: #F2F2F2; }
       .work__btn--brb::after {
-        border-color: #fff; }
-    .work__btn--device::after {
-      border-color: #fff; }
-    .work__btn--pilates::after {
-      border-color: #fff; }
-    .work__btn--pixel::after {
-      border-color: #fff; }
-    .work__btn--tests::after {
-      border-color: #fff; } }
+        border-color: #F2F2F2; }
+    .work__btn--device {
+      border-color: rgba(102, 90, 50, 0.7); }
+      .work__btn--device:hover {
+        border-color: #665A32; }
+      .work__btn--device::after {
+        border-color: #665A32; }
+    .work__btn--pilates {
+      border-color: rgba(64, 55, 75, 0.7); }
+      .work__btn--pilates:hover {
+        border-color: #40374B; }
+      .work__btn--pilates::after {
+        border-color: #40374B; }
+    .work__btn--pixel {
+      border-color: rgba(71, 82, 82, 0.7); }
+      .work__btn--pixel:hover {
+        border-color: #475252; }
+      .work__btn--pixel::after {
+        border-color: #475252; }
+    .work__btn--tests {
+      border-color: rgba(98, 21, 39, 0.7); }
+      .work__btn--tests:hover {
+        border-color: #621527; }
+      .work__btn--tests::after {
+        border-color: #621527; }
+    .work__btn--azbyka {
+      border-color: rgba(255, 246, 229, 0.7); }
+      .work__btn--azbyka:hover {
+        border-color: #FFF6E5; }
+      .work__btn--azbyka::after {
+        border-color: #FFF6E5; } }
 
 @media (min-width: 1350px) {
   .work {
