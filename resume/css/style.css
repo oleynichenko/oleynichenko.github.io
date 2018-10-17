@@ -52,10 +52,28 @@ picture {
   font-size: 0px; }
 
 .page {
+  position: relative;
   width: 95%;
   max-width: 370px;
   margin: 0 auto;
   margin-top: 2.5%; }
+  @media (min-width: 768px) {
+    .page {
+      max-width: 835px; } }
+  @media (min-width: 1200px) {
+    .page {
+      width: 1180px;
+      max-width: none;
+      margin: 0 auto; } }
+
+.page__lang {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-decoration: none;
+  color: #7a7a7a; }
+  .page__lang:hover {
+    color: #ff0000; }
 
 .page__module {
   display: flex;
@@ -67,6 +85,52 @@ picture {
 .page__module-item {
   width: 100%;
   margin-bottom: 64px; }
+
+@media (min-width: 768px) {
+  .page {
+    width: 95%;
+    max-width: 370px;
+    margin: 0 auto;
+    margin-top: 5%; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .page {
+      max-width: 835px; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .page {
+      width: 1180px;
+      max-width: none;
+      margin: 0 auto; } }
+
+@media (min-width: 768px) {
+  .page__lang {
+    right: 16px;
+    top: 0px; }
+  .page__module {
+    flex-wrap: nowrap;
+    margin-bottom: 68px; }
+    .page__module:last-child .page__module-item:first-child {
+      order: 0; }
+  .page__module-item {
+    width: 46.5%;
+    margin-bottom: 0; } }
+
+@media (min-width: 1200px) {
+  .page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 128.07538px;
+    padding-right: 69.82249px;
+    padding-bottom: 153.69046px;
+    padding-left: 90.76923px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden; }
+  .page__lang {
+    right: 80px;
+    top: 70px; }
+  .page__module {
+    margin-bottom: 76px; } }
 
 .about {
   margin-bottom: 64px; }
@@ -96,7 +160,7 @@ picture {
   letter-spacing: normal; }
 
 .about__description {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   font-size: 16px;
   color: #7a7a7a;
   font-weight: normal;
@@ -107,6 +171,45 @@ picture {
   margin-bottom: 0.5em; }
   .about__description p:last-child {
     margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  .about {
+    position: relative;
+    display: flex;
+    margin-bottom: 138px; }
+  .about__block {
+    padding-right: 2%; }
+  .about__photo {
+    width: 22%;
+    flex-shrink: 0;
+    margin-right: 4%;
+    margin-bottom: 0; }
+  .about__name {
+    font-size: 40.26608px; }
+  .about__position {
+    margin-bottom: 17px;
+    font-size: 22.661px; }
+  .about__description {
+    margin-bottom: 0;
+    font-size: 17px; } }
+
+@media (min-width: 1200px) {
+  .about {
+    display: flex;
+    margin-bottom: 76px; }
+  .about__photo {
+    width: 21%; }
+  .about__block {
+    padding-right: 10px; }
+  .about__name {
+    margin-bottom: 5px;
+    font-size: 45.00327px; }
+  .about__position {
+    margin-bottom: 19px;
+    font-size: 25.327px; }
+  .about__description {
+    margin-bottom: 32px;
+    font-size: 19px; } }
 
 .info {
   display: block; }
@@ -140,6 +243,38 @@ picture {
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.5px; }
+
+@media (min-width: 768px) {
+  .info {
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+    width: 100%; }
+  .info tbody {
+    display: flex;
+    justify-content: space-between; }
+  .info__method {
+    margin-bottom: 0; }
+  .info__name {
+    font-size: 17px;
+    color: #7a7a7a;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal; }
+  .info__info {
+    font-size: 17px;
+    color: #4c4c4c;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.5px; } }
+
+@media (min-width: 1200px) {
+  .info {
+    position: static; }
+  .info__name {
+    font-size: 19px; }
+  .info__info {
+    font-size: 19px; } }
 
 .contacts {
   display: block;
@@ -208,6 +343,48 @@ picture {
   top: 12px;
   fill: #fff; }
 
+@media (min-width: 768px) {
+  .contacts {
+    margin-bottom: 68px; }
+  .contacts__title {
+    font-size: 30.20711px; }
+  .contacts tbody {
+    padding-top: 30.20711px; }
+  .contacts__method {
+    padding-left: 60px;
+    margin-bottom: 0; }
+  .contacts__name {
+    font-size: 17px; } }
+
+@media (min-width: 1200px) {
+  .contacts {
+    margin-bottom: 76px; }
+  .contacts__title {
+    font-size: 33.76089px; }
+  .contacts tbody {
+    padding-top: 33.76089px; }
+  .contacts__method {
+    padding-left: 80px; }
+    .contacts__method:last-child {
+      margin-right: 15px; }
+    .contacts__method:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      left: 0px;
+      top: -7px; }
+  .contacts__name {
+    font-size: 19px; }
+  .contacts__info {
+    font-size: 25.327px; }
+  .contacts__icon {
+    width: 26px;
+    height: 26px;
+    left: 18px;
+    top: 10px; } }
+
 .business {
   display: block; }
 
@@ -248,6 +425,7 @@ picture {
   box-sizing: border-box;
   width: 40%;
   padding: 0;
+  padding-top: 2px;
   padding-right: 15px; }
 
 .business__description {
@@ -278,6 +456,26 @@ picture {
     margin-left: -10px; }
   .business__circle--grey {
     background-color: #7a7a7a; }
+
+@media (min-width: 768px) {
+  .business__title {
+    font-size: 30.20711px; }
+  .business tbody {
+    padding-top: 30.20711px; }
+  .business__item {
+    font-size: 17px; } }
+
+@media (min-width: 1200px) {
+  .business__title {
+    font-size: 33.76089px; }
+  .business tbody {
+    padding-top: 33.76089px; }
+  .business__item {
+    font-size: 19px;
+    margin-bottom: 16px; }
+  .business__circle {
+    width: 15px;
+    height: 15px; } }
 
 .hobbies__title {
   position: absolute;
@@ -323,7 +521,7 @@ picture {
   .hobbies__item:nth-child(3) {
     width: 20%;
     margin-top: 2px;
-    font-size: 28px;
+    font-size: 40px;
     opacity: 0.3; }
   .hobbies__item:nth-child(4) {
     width: 80%;
@@ -333,7 +531,7 @@ picture {
     width: 75%;
     margin-top: 3px;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 31px;
     text-align: left;
     opacity: 0.6; }
   .hobbies__item:nth-child(6) {
@@ -345,7 +543,7 @@ picture {
   .hobbies__item:nth-child(7) {
     width: 50%;
     padding-top: 5px;
-    font-size: 16px;
+    font-size: 25px;
     text-align: left;
     align-self: center;
     opacity: 0.9; }
@@ -371,97 +569,24 @@ picture {
   font-size: 19px; }
 
 @media (min-width: 768px) {
-    .page {
-      max-width: 835px; }
-  .page {
-    width: 95%;
-    max-width: 370px;
-    margin: 0 auto;
-    margin-top: 5%; }
-  .page__module {
-    flex-wrap: nowrap;
-    margin-bottom: 68px; }
-    .page__module:last-child .page__module-item:first-child {
-      order: 0; }
-  .page__module-item {
-    width: 46.5%;
-    margin-bottom: 0; }
-  .about {
-    position: relative;
-    display: flex;
-    margin-bottom: 138px; }
-  .about__block {
-    padding-right: 2%; }
-  .about__photo {
-    width: 25%;
-    flex-shrink: 0;
-    margin-right: 4%;
-    margin-bottom: 0; }
-  .about__name {
-    font-size: 40.26608px; }
-  .about__position {
-    margin-bottom: 17px;
-    font-size: 22.661px; }
-  .about__description {
-    margin-bottom: 0;
-    font-size: 17px; }
-  .info {
-    position: absolute;
-    left: 0;
-    bottom: -70px;
-    width: 100%; }
-  .info tbody {
-    display: flex;
-    justify-content: space-between; }
-  .info__method {
-    margin-bottom: 0; }
-  .info__name {
-    font-size: 17px;
-    color: #7a7a7a;
-    font-weight: normal;
-    line-height: 1;
-    letter-spacing: normal; }
-  .info__info {
-    font-size: 17px;
-    color: #4c4c4c;
-    font-weight: bold;
-    line-height: 1;
-    letter-spacing: 0.5px; }
-  .contacts {
-    margin-bottom: 68px; }
-  .contacts__title {
-    font-size: 30.20711px; }
-  .contacts tbody {
-    padding-top: 30.20711px; }
-  .contacts__method {
-    padding-left: 60px;
-    margin-bottom: 0; }
-  .contacts__name {
-    font-size: 17px; }
-  .business__title {
-    font-size: 30.20711px; }
-  .business tbody {
-    padding-top: 30.20711px; }
-  .business__item {
-    font-size: 17px; }
   .hobbies {
-    padding-top: 8px; }
+    padding-top: 73px; }
   .hobbies__item {
     margin-bottom: 10px; }
     .hobbies__item:nth-child(1) {
-      font-size: 27px; }
+      font-size: 26px; }
     .hobbies__item:nth-child(2) {
       font-size: 36px; }
     .hobbies__item:nth-child(3) {
-      font-size: 33px; }
+      font-size: 43px; }
     .hobbies__item:nth-child(4) {
       font-size: 58px; }
     .hobbies__item:nth-child(5) {
-      font-size: 28px; }
+      font-size: 34px; }
     .hobbies__item:nth-child(6) {
       font-size: 37px; }
     .hobbies__item:nth-child(7) {
-      font-size: 18px; }
+      font-size: 26px; }
     .hobbies__item:nth-child(8) {
       font-size: 49px; }
     .hobbies__item:nth-child(10) {
@@ -471,101 +596,24 @@ picture {
   .hobbies__boks {
     font-size: 19px; } }
 
-@media (min-width: 768px) and (min-width: 768px) {
-    .page {
-      max-width: 835px; } }
-
 @media (min-width: 1200px) {
-    .page {
-      width: 1180px;
-      max-width: none;
-      margin: 0 auto; }
-  .page {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 128.07538px;
-    padding-right: 69.82249px;
-    padding-bottom: 153.69046px;
-    padding-left: 90.76923px;
-    box-sizing: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
-    overflow: hidden; }
-  .page__module {
-    margin-bottom: 76px; }
-  .about {
-    display: flex;
-    margin-bottom: 76px; }
-  .about__photo {
-    width: 21%; }
-  .about__block {
-    padding-right: 10px; }
-  .about__name {
-    margin-bottom: 5px;
-    font-size: 45.00327px; }
-  .about__position {
-    margin-bottom: 19px;
-    font-size: 25.327px; }
-  .about__description {
-    margin-bottom: 19px;
-    font-size: 19px; }
-  .info {
-    position: static; }
-  .info__name {
-    font-size: 19px; }
-  .info__info {
-    font-size: 19px; }
-  .contacts {
-    margin-bottom: 76px; }
-  .contacts__title {
-    font-size: 33.76089px; }
-  .contacts tbody {
-    padding-top: 33.76089px; }
-  .contacts__method {
-    padding-left: 80px; }
-    .contacts__method:last-child {
-      margin-right: 15px; }
-    .contacts__method:before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      left: 0px;
-      top: -7px; }
-  .contacts__name {
-    font-size: 19px; }
-  .contacts__info {
-    font-size: 25.327px; }
-  .contacts__icon {
-    width: 26px;
-    height: 26px;
-    left: 18px;
-    top: 10px; }
-  .business__title {
-    font-size: 33.76089px; }
-  .business tbody {
-    padding-top: 33.76089px; }
-  .business__item {
-    font-size: 19px; }
-  .business__circle {
-    width: 15px;
-    height: 15px; }
+  .hobbies {
+    padding-top: 73px; }
   .hobbies__item:nth-child(1) {
     font-size: 38px; }
   .hobbies__item:nth-child(2) {
     font-size: 50px; }
   .hobbies__item:nth-child(3) {
     margin-top: 5px;
-    font-size: 48px; }
+    font-size: 60px; }
   .hobbies__item:nth-child(4) {
     font-size: 80px; }
   .hobbies__item:nth-child(5) {
-    font-size: 40px; }
+    font-size: 51px; }
   .hobbies__item:nth-child(6) {
     font-size: 50px; }
   .hobbies__item:nth-child(7) {
-    font-size: 26px; }
+    font-size: 40px; }
   .hobbies__item:nth-child(8) {
     font-size: 67px; }
   .hobbies__item:nth-child(10) {
@@ -574,12 +622,6 @@ picture {
     font-size: 65px; }
   .hobbies__boks {
     font-size: 26px; } }
-
-@media (min-width: 768px) and (min-width: 1200px) {
-    .page {
-      width: 1180px;
-      max-width: none;
-      margin: 0 auto; } }
 
 @media print {
   @page {
