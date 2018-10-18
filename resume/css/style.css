@@ -104,7 +104,7 @@ picture {
 @media (min-width: 768px) {
   .page__lang {
     right: 16px;
-    top: 0px; }
+    top: 3px; }
   .page__module {
     flex-wrap: nowrap;
     margin-bottom: 68px; }
@@ -477,23 +477,27 @@ picture {
     width: 15px;
     height: 15px; } }
 
+.hobbies:hover .hobbies__title {
+  opacity: 1; }
+
+.hobbies:hover .hobbies__list {
+  border-top-color: #ff0000; }
+
 .hobbies__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden; }
+  color: #ff0000;
+  opacity: 0;
+  transition: opacity 0.5s; }
 
 .hobbies__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: top;
-  list-style: none;
-  padding: 0;
-  margin: 0; }
+  border-top: 3px solid transparent;
+  padding-top: 28.43022px;
+  transition: border-top-color 1s; }
 
 .hobbies__item {
   margin-bottom: 5px;
@@ -509,19 +513,19 @@ picture {
     color: #ff0000; }
   .hobbies__item:nth-child(1) {
     width: 60%;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: normal;
     opacity: 0.8; }
   .hobbies__item:nth-child(2) {
     width: 40%;
     margin-top: -5px;
-    font-size: 32px;
+    font-size: 29px;
     text-align: right;
     opacity: 0.5; }
   .hobbies__item:nth-child(3) {
     width: 20%;
     margin-top: 2px;
-    font-size: 40px;
+    font-size: 39px;
     opacity: 0.3; }
   .hobbies__item:nth-child(4) {
     width: 80%;
@@ -531,7 +535,7 @@ picture {
     width: 75%;
     margin-top: 3px;
     font-weight: bold;
-    font-size: 31px;
+    font-size: 30px;
     text-align: left;
     opacity: 0.6; }
   .hobbies__item:nth-child(6) {
@@ -549,7 +553,7 @@ picture {
     opacity: 0.9; }
   .hobbies__item:nth-child(8) {
     width: 50%;
-    font-size: 43px;
+    font-size: 29px;
     font-weight: normal;
     text-align: right;
     opacity: 0.5; }
@@ -559,8 +563,8 @@ picture {
     text-align: right;
     opacity: 0.3; }
   .hobbies__item:nth-child(9) {
-    width: 70%;
-    font-size: 40px;
+    width: 100%;
+    font-size: 45px;
     font-weight: bold;
     text-align: left;
     opacity: 0.7; }
@@ -569,57 +573,57 @@ picture {
   font-size: 19px; }
 
 @media (min-width: 768px) {
-  .hobbies {
-    padding-top: 73px; }
+  .hobbies__list {
+    padding-top: 30.20711px; }
   .hobbies__item {
     margin-bottom: 10px; }
     .hobbies__item:nth-child(1) {
-      font-size: 26px; }
+      font-size: 27px; }
     .hobbies__item:nth-child(2) {
-      font-size: 36px; }
+      font-size: 33px; }
     .hobbies__item:nth-child(3) {
       font-size: 43px; }
     .hobbies__item:nth-child(4) {
       font-size: 58px; }
     .hobbies__item:nth-child(5) {
-      font-size: 34px; }
+      font-size: 35px; }
     .hobbies__item:nth-child(6) {
       font-size: 37px; }
     .hobbies__item:nth-child(7) {
-      font-size: 26px; }
+      font-size: 30px; }
     .hobbies__item:nth-child(8) {
-      font-size: 49px; }
+      font-size: 33px; }
     .hobbies__item:nth-child(10) {
       font-size: 22px; }
     .hobbies__item:nth-child(9) {
-      font-size: 45px; }
+      font-size: 52px; }
   .hobbies__boks {
     font-size: 19px; } }
 
 @media (min-width: 1200px) {
-  .hobbies {
-    padding-top: 73px; }
+  .hobbies__list {
+    padding-top: 36.76089px; }
   .hobbies__item:nth-child(1) {
-    font-size: 38px; }
+    font-size: 39px; }
   .hobbies__item:nth-child(2) {
-    font-size: 50px; }
+    font-size: 48px; }
   .hobbies__item:nth-child(3) {
     margin-top: 5px;
-    font-size: 60px; }
+    font-size: 62px; }
   .hobbies__item:nth-child(4) {
-    font-size: 80px; }
+    font-size: 81px; }
   .hobbies__item:nth-child(5) {
-    font-size: 51px; }
+    font-size: 49px; }
   .hobbies__item:nth-child(6) {
-    font-size: 50px; }
+    font-size: 54px; }
   .hobbies__item:nth-child(7) {
     font-size: 40px; }
   .hobbies__item:nth-child(8) {
-    font-size: 67px; }
+    font-size: 48px; }
   .hobbies__item:nth-child(10) {
     font-size: 30px; }
   .hobbies__item:nth-child(9) {
-    font-size: 65px; }
+    font-size: 76px; }
   .hobbies__boks {
     font-size: 26px; } }
 
