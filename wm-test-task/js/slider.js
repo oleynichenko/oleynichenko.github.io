@@ -193,7 +193,6 @@
 		const stopPoint = getStopPoint(choosenLevel);
 
     moveSlider(stopPoint);    
-
 	});
 
 	// переключение уровня при клике на label
