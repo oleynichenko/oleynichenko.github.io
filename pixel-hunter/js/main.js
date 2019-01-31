@@ -1,7 +1,7 @@
 (function () {
 'use strict';
 
-const SERVER_URL = `https://intensive-ecmascript-server-btfgudlkpi.now.sh/pixel-hunter`;
+const SERVER_URL = `https://es.dump.academy/pixel-hunter`;
 const DEFAULT_NAME = `noname`;
 
 var model = new class {
