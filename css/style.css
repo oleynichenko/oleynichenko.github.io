@@ -371,7 +371,8 @@ address {
   .work__title:hover ~ .work__content .work__cover {
     opacity: 1; }
   .work__cover-content {
-    margin-bottom: 4%; }
+    margin-bottom: 4%;
+    width: 100%; }
   .work__features {
     height: 108px;
     overflow: hidden; }
@@ -485,7 +486,8 @@ address {
     line-height: 20px;
     letter-spacing: normal; }
   .work__cover-content {
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    width: auto; }
   .work__btns {
     align-self: center;
     width: 140px; }
