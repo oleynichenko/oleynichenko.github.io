@@ -298,6 +298,10 @@ address {
     border-color: #e7e7e7; }
   .work__btn--slider::after {
     border-color: #ebdcff; }
+  .work__btn--words::after {
+    border-color: #303030; }
+  .work__btn--time::after {
+    border-color: #527a51; }
 
 @media (min-width: 1100px) {
   .work {
@@ -366,6 +370,12 @@ address {
     .work__cover--slider {
       background-color: rgba(235, 220, 255, 0.95);
       color: #35303c; }
+    .work__cover--words {
+      background-color: rgba(48, 48, 48, 0.95);
+      color: #F2F2F2; }
+    .work__cover--time {
+      background-color: rgba(82, 122, 81, 0.95);
+      color: #dff6de; }
   .work__content:hover .work__cover {
     opacity: 1; }
   .work__title:hover ~ .work__content .work__cover {
@@ -454,7 +464,19 @@ address {
       .work__btn--slider:hover {
         border-color: #35303c; }
       .work__btn--slider::after {
-        border-color: #35303c; } }
+        border-color: #35303c; }
+    .work__btn--words {
+      border-color: rgba(242, 242, 242, 0.7); }
+      .work__btn--words:hover {
+        border-color: #F2F2F2; }
+      .work__btn--words::after {
+        border-color: #F2F2F2; }
+    .work__btn--time {
+      border-color: rgba(223, 246, 222, 0.7); }
+      .work__btn--time:hover {
+        border-color: #dff6de; }
+      .work__btn--time::after {
+        border-color: #dff6de; } }
 
 @media (min-width: 1350px) {
   .work {
