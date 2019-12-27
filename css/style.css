@@ -284,6 +284,8 @@ address {
     border-color: #b3cfd0; }
   .work__btn--tests::after {
     border-color: #e4476c; }
+  .work__btn--jbook::after {
+    border-color: #673bb7; }
   .work__btn--azbyka::after {
     border-color: #6E4B0B; }
   .work__btn--chat::after {
@@ -349,6 +351,9 @@ address {
     .work__cover--tests {
       background-color: rgba(228, 71, 108, 0.95);
       color: #621527; }
+    .work__cover--jbook {
+      background-color: rgba(103, 59, 183, 0.95);
+      color: #ded8e8; }
     .work__cover--azbyka {
       background-color: rgba(110, 75, 11, 0.95);
       color: #FFF6E5; }
@@ -423,6 +428,12 @@ address {
         border-color: #621527; }
       .work__btn--tests::after {
         border-color: #621527; }
+    .work__btn--jbook {
+      border-color: rgba(222, 216, 232, 0.7); }
+      .work__btn--jbook:hover {
+        border-color: #ded8e8; }
+      .work__btn--jbook::after {
+        border-color: #ded8e8; }
     .work__btn--azbyka {
       border-color: rgba(255, 246, 229, 0.7); }
       .work__btn--azbyka:hover {
