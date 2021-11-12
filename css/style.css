@@ -276,6 +276,8 @@ address {
     transition: border-color 0.7s; }
   .work__btn--brb::after {
     border-color: #000; }
+  .work__btn--daat::after {
+    border-color: #000; }
   .work__btn--device::after {
     border-color: #ffe27f; }
   .work__btn--pilates::after {
@@ -342,6 +344,9 @@ address {
     .work__cover--brb {
       background-color: rgba(0, 0, 0, 0.85);
       color: #F2F2F2; }
+    .work__cover--daat {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #F2F2F2; }
     .work__cover--device {
       background-color: rgba(255, 226, 127, 0.95);
       color: #665A32; }
@@ -403,6 +408,12 @@ address {
       .work__btn--brb:hover {
         border-color: #F2F2F2; }
       .work__btn--brb::after {
+        border-color: #F2F2F2; }
+    .work__btn--daat {
+      border-color: rgba(242, 242, 242, 0.85); }
+      .work__btn--daat:hover {
+        border-color: #F2F2F2; }
+      .work__btn--daat::after {
         border-color: #F2F2F2; }
     .work__btn--device {
       border-color: rgba(102, 90, 50, 0.7); }
@@ -501,7 +512,7 @@ address {
     line-height: 25px;
     letter-spacing: normal; }
   .work__tags {
-    margin-bottom: 0px; }
+    margin-bottom: 0; }
   .work__cover {
     padding: 8% 8%; }
   .work__cover-title {
